@@ -2,6 +2,7 @@
   --primary-text-color: #212121;
   --accent-color: #2196f3;
   --secondary-text-color: #757575;
+  --white-color: #ffffff;
 }
 
 body {
@@ -14,8 +15,17 @@ body {
 .link {
   text-decoration: none;
 }
-.hidden-title{
-    visibility: hidden;
+.hidden-title {
+  position: absolute;
+  white-space: space;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /*-------HEADER--------*/
 /*font-family: 'Raleway', sans-serif;*/
@@ -28,8 +38,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo-part-2{
+.logo-part-2 {
   color: #000000;
+}
+.logo-footer {
+  color: var(--white-color);
 }
 
 .navigation-link {
@@ -69,10 +82,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
-.order-btn{
-background:var(--accent-color);
+.order-btn {
+  background: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -80,19 +93,20 @@ background:var(--accent-color);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
 /*--------------BENEFITS-------------*/
 
 .benefits-header {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color:var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 .benefits-item {
   font-size: 14px;
@@ -112,18 +126,19 @@ background:var(--accent-color);
 /*--------------TEAM-------------*/
 
 .team-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 .team-name {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .team-description {
-
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -137,15 +152,13 @@ background:var(--accent-color);
   background-color: #2f303a;
 }
 .adress-link {
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   font-style: normal;
 }
 .bottom-contact {
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -157,32 +170,30 @@ background:var(--accent-color);
 
 /*--------FILTER SECTION---------*/
 
-.filter-btn{
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-cursor: pointer;
+.filter-btn {
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .filter-btn:hover,
-.filter-btn:focus{
-    background-color: var(--accent-color);
-    color: #FFFFFF;
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
-.proj-name{
-
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
+.proj-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
-.proj-description{
+.proj-description {
+  font-size: 16px;
+  line-height: 1.88;
 
+  letter-spacing: 0.03em;
 
-font-size: 16px;
-line-height: 1.88;
-
-letter-spacing: 0.03em;
-
-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
